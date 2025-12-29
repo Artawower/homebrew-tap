@@ -11,7 +11,7 @@ class Wallboy < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/Artawower/wallboy/releases/download/v0.2.1/wallboy_0.2.1_darwin_amd64.tar.gz"
-      sha256 "9e7a54c3fc9e2e08f81d229411948992f56e5446dc580ba179f364e8cdd945b1"
+      sha256 "abc24f2ce9b10e3368f13bbbed5aef9693dac51c3d0aea152320c4841867288f"
 
       def install
         bin.install "wallboy"
@@ -19,7 +19,7 @@ class Wallboy < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/Artawower/wallboy/releases/download/v0.2.1/wallboy_0.2.1_darwin_arm64.tar.gz"
-      sha256 "349d554253e6ce638b61602d1de8444f7cc3e4c938248896374b5a9d5f528ce6"
+      sha256 "b19883775ff9fbefc031aa5cb68881f4a9852926be5b5001040fa5861c085c2d"
 
       def install
         bin.install "wallboy"
@@ -30,14 +30,14 @@ class Wallboy < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/Artawower/wallboy/releases/download/v0.2.1/wallboy_0.2.1_linux_amd64.tar.gz"
-      sha256 "63ab510732c58e9b8378c0fa8982bfed7a4407f031b642abc946c5944e64a27e"
+      sha256 "354445478a54ff406346f9134430c9ef2ce901a14a9a8289180065db579f75fb"
       def install
         bin.install "wallboy"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/Artawower/wallboy/releases/download/v0.2.1/wallboy_0.2.1_linux_arm64.tar.gz"
-      sha256 "b99b060cb4706cf75a861c96aea5e30337d1c63b05c65dcb462f5615376253fc"
+      sha256 "1811ea06455f72997b6c29ef2d7736dc85a639e1728f425341c38a2962e53554"
       def install
         bin.install "wallboy"
       end
