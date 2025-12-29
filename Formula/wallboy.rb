@@ -5,21 +5,21 @@
 class Wallboy < Formula
   desc "Cross-platform wallpaper manager with auto-rotation"
   homepage "https://github.com/Artawower/wallboy"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Artawower/wallboy/releases/download/v0.1.2/wallboy_0.1.2_darwin_amd64.tar.gz"
-      sha256 "9e43e2edb3686662af2c6952f39ee4b871c1cf0661a3646d4cc47f7d97667bae"
+      url "https://github.com/Artawower/wallboy/releases/download/v0.1.3/wallboy_0.1.3_darwin_amd64.tar.gz"
+      sha256 "8674b9bd7bf4e0fd6dfdb6d1d230cadb02731d3cdb081a7fb26ef2346eedbcc6"
 
       def install
         bin.install "wallboy"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Artawower/wallboy/releases/download/v0.1.2/wallboy_0.1.2_darwin_arm64.tar.gz"
-      sha256 "c0d28d240c43b952ee1df807e6b9279e1ba111272ccd13f90f40bccae4d899f8"
+      url "https://github.com/Artawower/wallboy/releases/download/v0.1.3/wallboy_0.1.3_darwin_arm64.tar.gz"
+      sha256 "2fe92e3027dca8c92fa39bea8652b6069780da4c889f02869c6b6e42e49aa365"
 
       def install
         bin.install "wallboy"
@@ -29,15 +29,15 @@ class Wallboy < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Artawower/wallboy/releases/download/v0.1.2/wallboy_0.1.2_linux_amd64.tar.gz"
-      sha256 "50576fa657797e9f1f482febb2740a5fc9d3742bb47772d4bde93e1e48f39280"
+      url "https://github.com/Artawower/wallboy/releases/download/v0.1.3/wallboy_0.1.3_linux_amd64.tar.gz"
+      sha256 "112a39e0badca2307c24490c1d6a9b28ec20351a6f7a2d14e5a5e9883983c4ed"
       def install
         bin.install "wallboy"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Artawower/wallboy/releases/download/v0.1.2/wallboy_0.1.2_linux_arm64.tar.gz"
-      sha256 "244ce0afd753e8c918e74cb955846a906dc7ebc021f1fac52af1f57e5f9422f4"
+      url "https://github.com/Artawower/wallboy/releases/download/v0.1.3/wallboy_0.1.3_linux_arm64.tar.gz"
+      sha256 "26d7c56ea2284c5ab74bb9546bb37e4ea6db20ebb589b5d985da8f5f592f70c0"
       def install
         bin.install "wallboy"
       end
